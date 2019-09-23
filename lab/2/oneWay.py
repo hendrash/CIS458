@@ -25,7 +25,8 @@ def collision(hash):
         trials+=1
         hashVal=hashlib.md5(hashVal.encode()).hexdigest()
         print(hash+" "+ hashVal) 
-    print("found a collision from the first three hash bits "+hash[:3])
+    print("each hash output is a hash of the previous hash value")
+    print("found a collision from the first 24 bits "+hash[:3])
     print("the process took "+str(trials)+" trials")
 
 #main
