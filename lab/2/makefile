@@ -1,0 +1,2 @@
+all:
+	python oneWay.py	
